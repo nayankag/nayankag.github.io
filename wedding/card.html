@@ -24,9 +24,18 @@
 </head>
 <body>
 
-   <audio src="backmusic.mp3" autoplay loop></audio>
+   <!-- <audio src="backmusic.mp3" autoplay loop></audio>
    <iframe src="backmusic.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe> 
+</iframe>  -->
+<audio id="myAudio" controls autoplay>
+    <source src="backmusic.mp3" type="audio/mpeg">
+  </audio>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myAudio").autoplay;
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script>
 
   <section class="menu cid-t3kBpxL943" once="menu" id="menu1-5">
 
