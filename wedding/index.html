@@ -48,7 +48,7 @@
                     </picture>
                 </a>
                 <h1 style="font-weight: bolder;">To</h1>
-                <h1 id="namef" style="font-weight: bolder;font-size: 60px;"></h1>
+                <h1 id="namef" style="font-weight: bolder;font-size: 50px;"></h1>
                 <h1 style="text-align: center;"><a href="card.html" style="color: red;"> Tap to View Invitation</a></h1>
             </div>
         </div>
@@ -59,10 +59,14 @@
                 var url_string = window.location;
                 var url = new URL(url_string);
                 var name = url.searchParams.get("name");
-                if (name = "null") {
-                    name  = "Your Entire Family"
+                
+                if (name == "null") {
+                    document.getElementById("namef").innerHTML = "Your Entire Family";
                 }
-                document.getElementById("namef").innerHTML = name;
+                else{
+                    var fname = name.split("-");
+                    document.getElementById("namef").innerHTML = fname[0]+" "+fname[1]+" and Family";
+                }
             </script>
 </body>
 
