@@ -1,34 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:image" content="thumbnail.png" />
+
+    <title>Wedding Invitation</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: none;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .row {
+            margin: 0 -5px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 #f7e0cc;
+            padding: 16px;
+            text-align: center;
+            background-color: #fff9f2;
+            border-radius: 20px;
+        }
+    </style>
+
 
 </head>
+
 <body>
     <audio id="myAudio" autoplay loop>
-        <source src="backmusicf.mp3" type="audio/mpeg">
+        <source src="baclmusic2.mp3" type="audio/mpeg">
     </audio>
     <div>
         <picture>
-            <source media="(min-width: 600px)" srcset="1.png">
+            <source media="(min-width: 600px)" srcset="computer/1.png">
             <img src="mobile/1.png" height="100%" width="100%">
         </picture>
     </div>
     <div>
         <picture>
-            <source media="(min-width: 600px)" srcset="2.png">
+            <source media="(min-width: 600px)" srcset="computer/2.png">
             <img src="mobile/2.png" height="100%" width="100%">
         </picture>
     </div>
     <div>
         <picture>
-            <source media="(min-width: 600px)" srcset="2.png">
-            <img src="mobile/2.png" height="100%" width="100%">
+            <source media="(min-width: 600px)" srcset="computer/2.png">
+            <img src="mobile/3.png" height="100%" width="100%">
         </picture>
     </div>
+
+
+    <div class="row" style="background-color: #fff9f2;">
+
+        <div class="column">
+            <div class="card">
+                <p style="font-size:x-large ;color: #c40000;"> विवाह स्थळ </p>
+                <p><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.382378188213!2d78.2216823150318!3d21.01738078600455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4158dc55758d9%3A0x38791f063e3ebe39!2sShilaram%20Mangalam!5e0!3m2!1sen!2sin!4v1650432520000!5m2!1sen!2sin"
+                        width="60%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+
+            <div class="card">
+                <p style="font-size:small ;color: black"> Contact </p>
+                </div>
+        </div>
+    </div>
+
+
+
 
     <script>
         function myFunction() {
@@ -37,4 +102,5 @@
         }
     </script>
 </body>
+
 </html>
